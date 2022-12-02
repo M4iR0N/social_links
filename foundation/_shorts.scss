@@ -1,0 +1,16 @@
+// grid-column-start: 2;
+// grid-row-start: 1;
+// grid-row-end: 10;
+
+@mixin gridShort($grid-c-start, $grid-r-start, $grid-r-end){
+    grid-column-start: $grid-c-start;
+    grid-row-start: $grid-r-start;
+    grid-row-end: $grid-r-end;
+}
+
+@mixin flexCenter($display, $justify, $align){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+

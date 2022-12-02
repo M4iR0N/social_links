@@ -1,0 +1,106 @@
+@import './foundation/shorts';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body, html{
+    min-width: 50%;
+    min-height: 50%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+.profile{
+    @include flexCenter(flex, center, center);
+    flex-direction: column;
+    .profile_pic{
+        margin-top: 50px;
+        border-radius: 50%;
+        height: auto;
+        width: 250px;
+    }
+    span{
+        font-size: 2em;
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(50, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    .one{
+        @include gridShort(2, 1, 10);
+        @include flexCenter(flex, center, center);
+    }.two{
+        @include gridShort(2, 10, 20);
+        @include flexCenter(flex, center, center);
+         
+    }.three{
+        @include gridShort(2, 20, 30);
+        @include flexCenter(flex, center, center);
+        
+    }.four{
+        @include gridShort(2, 30, 40);
+        @include flexCenter(flex, center, center);
+        
+    }.five{
+        @include gridShort(2, 40, 50);
+        @include flexCenter(flex, center, center);
+        
+    }
+}
+
+.twitter, .github, .instagram, .kofi, .bmac {   
+    border-radius: 2rem;
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    height: 50px;
+    width: 250px;
+    @include flexCenter(flex, center, center);
+    transition: width 0.7s;
+    position: relative;
+}
+
+.twitter:hover, .github:hover, .instagram:hover, .kofi:hover, .bmac:hover {
+    width: 500px;
+    #twitter_social{
+        filter: invert(0.4) sepia(1) saturate(20) hue-rotate(165.6deg) brightness(1.2);
+    }
+    #github_social{
+        filter: invert(0.4) sepia(0) saturate(1) hue-rotate(0deg) brightness(0.6);
+    }
+    #instagram_social{
+        filter: invert(0.4) sepia(1) saturate(20) hue-rotate(241.2deg) brightness(1.2);
+    }
+    #kofi_social{
+        filter: invert(2) sepia(0) saturate(1) hue-rotate(0deg) brightness(2);
+    }
+    #bmac_social{
+        filter: invert(2) sepia(0) saturate(1) hue-rotate(0deg) brightness(2);
+    }
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.social {
+    height: 35px;
+    width: auto;
+    position: absolute;
+    left: 15px;
+}
+
+footer {
+    height: 50vh;
+    width: auto;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    position: relative;
+    border-radius: 15% 15% 0% 0%;
+    p {
+        text-align: center;
+        font-weight: bold;
+    }
+}

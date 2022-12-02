@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+body, html {
+  min-width: 50%;
+  min-height: 50%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profile .profile_pic {
+  margin-top: 50px;
+  border-radius: 50%;
+  height: auto;
+  width: 250px;
+}
+.profile span {
+  font-size: 2em;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(50, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+}
+.wrapper .one {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .two {
+  grid-column-start: 2;
+  grid-row-start: 10;
+  grid-row-end: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .three {
+  grid-column-start: 2;
+  grid-row-start: 20;
+  grid-row-end: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .four {
+  grid-column-start: 2;
+  grid-row-start: 30;
+  grid-row-end: 40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .five {
+  grid-column-start: 2;
+  grid-row-start: 40;
+  grid-row-end: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twitter, .github, .instagram, .kofi, .bmac {
+  border-radius: 2rem;
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  height: 50px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.7s;
+  position: relative;
+}
+
+.twitter:hover, .github:hover, .instagram:hover, .kofi:hover, .bmac:hover {
+  width: 500px;
+}
+.twitter:hover #twitter_social, .github:hover #twitter_social, .instagram:hover #twitter_social, .kofi:hover #twitter_social, .bmac:hover #twitter_social {
+  filter: invert(0.4) sepia(1) saturate(20) hue-rotate(165.6deg) brightness(1.2);
+}
+.twitter:hover #github_social, .github:hover #github_social, .instagram:hover #github_social, .kofi:hover #github_social, .bmac:hover #github_social {
+  filter: invert(0.4) sepia(0) saturate(1) hue-rotate(0deg) brightness(0.6);
+}
+.twitter:hover #instagram_social, .github:hover #instagram_social, .instagram:hover #instagram_social, .kofi:hover #instagram_social, .bmac:hover #instagram_social {
+  filter: invert(0.4) sepia(1) saturate(20) hue-rotate(241.2deg) brightness(1.2);
+}
+.twitter:hover #kofi_social, .github:hover #kofi_social, .instagram:hover #kofi_social, .kofi:hover #kofi_social, .bmac:hover #kofi_social {
+  filter: invert(2) sepia(0) saturate(1) hue-rotate(0deg) brightness(2);
+}
+.twitter:hover #bmac_social, .github:hover #bmac_social, .instagram:hover #bmac_social, .kofi:hover #bmac_social, .bmac:hover #bmac_social {
+  filter: invert(2) sepia(0) saturate(1) hue-rotate(0deg) brightness(2);
+}
+
+a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.social {
+  height: 35px;
+  width: auto;
+  position: absolute;
+  left: 15px;
+}
+
+footer {
+  height: 50vh;
+  width: auto;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 0%, rgb(0, 212, 255) 100%);
+  position: relative;
+  border-radius: 15% 15% 0% 0%;
+}
+footer p {
+  text-align: center;
+  font-weight: bold;
+}/*# sourceMappingURL=links.css.map */
