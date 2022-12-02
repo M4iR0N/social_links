@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 body, html {
   min-width: 50%;
-  min-height: 50%;
+  min-height: 100%;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
 }
@@ -116,14 +116,15 @@ a {
 }
 
 footer {
-  height: 50vh;
-  width: auto;
-  background: rgb(2, 0, 36);
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 0%, rgb(0, 212, 255) 100%);
   position: relative;
   border-radius: 15% 15% 0% 0%;
 }
 footer p {
+  position: absolute;
   text-align: center;
   font-weight: bold;
+  top: 5em;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=links.css.map */
